@@ -1,7 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Vladimir Tyalo](https://htmlacademy.ru/profile/id32147).
-
+* Наставник: [Ольга Одноколова](https://htmlacademy.ru/profile/id38936).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
