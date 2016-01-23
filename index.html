@@ -13,27 +13,29 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="list__item">
-              <a href="#" class="item__link">Информация</a>
+          <ul>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" >Информация</a>
             </li>
-            <li class="list__item">
-              <a href="#" class="item__link">Новости</a>
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="#">Новости</a>
             </li>
-            <li class="list__item">
-              <a href="price-list.html" class="item__link">Прайс-лист</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link href="price-list.html" ">Прайс-лист</a>
             </li>
-            <li class="list__item">
-              <a href="cosmetic-catalog.html" class="item__link">Магазин</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="cosmetic-catalog.html">
+                Магазин
+              </a>
             </li>
-            <li class="list__item">
-              <a href="#" class="item__link">Контакты</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" >Контакты</a>
             </li>
           </ul>
         </nav>
 
         <div class="user-block">
-          <a href="#" class="user-block__link">Вход</a>
+          <a class="user-block__link" href="#" >Вход</a>
         </div>
       </div>
     </header>
@@ -43,58 +45,63 @@
     <main class="main-content">
       <div class="container">
         <div class="index-logo">
-          <img src="http://placehold.it/368x204" alt="barbershop logo">
+          <img src="http://placehold.it/368x204" alt="barbershop logo" width="368" height="204">
         </div>
 
         <section class="features">
            <div class="features__item">
              <b class="features__name">быстро</b>
              <p class="features__description">
-               Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
+               Мы делаем свою работу быстро! Два часа пролетят
+               незаметно и вы — счастливый обладатель стильной стрижки-минутки!
              </p>
            </div>
 
            <div class="features__item">
              <b class="features__name">круто</b>
              <p class="features__description">
-               Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+               Забудьте, как вы стриглись раньше. Мы сделаем из вас
+               звезду футбола или кино! Во всяком случае внешне.
              </p>
            </div>
 
            <div class="features__item">
              <b class="features__name">дорого</b>
              <p class="features__description">
-               Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
+               Наши мастера — профессионалы своего дела и не могут
+               стоить дешево. К тому же, разве цена не дает
+               определенный статус?
              </p>
            </div>
          </section>
 
          <div class="index-content">
-           <div class="index-content__left">
-             <h2 class="index-content__title">Новости</h2>
-             <ul class="news-preview">
+           <div class="news-preview">
+             <h2 class="news-preview__title">Новости</h2>
+             <ul>
                <li class="news-preview__item">
-                 <p class="news__description">
+                 <p class="news-preview__text">
                  Нам наконец завезли Ягермайстер! Теперь вы можете  пропустить стаканчик во время стрижки
                  </p>
-                 <time datetime="2016-01-11">11 января</time>
+                 <time class="news-preview__time" datetime="2016-01-11">11 января</time>
                </li>
                <li class="news-preview__item">
-                 <p class="news__description">
+                 <p class="news-preview__text">
                  В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные
                  </p>
-                 <time datetime="2016-01-18">18 Января</time>
+                 <time class="news-preview__time" datetime="2016-01-18">18 Января</time>
                </li>
              </ul>
 
              <a class="btn" href="#">Все новости</a>
            </div>
 
-           <div class="index-content__right">
-              <h2 class="index-content__title">Фотогалерея</h2>
-               <div class="galary">
-                 <figure class="galery-content">
-                   <img src="http://placehold.it/286x164" alt="barbershop galery">
+           <div class="index-galery">
+              <h2 class="index-galery__title">Фотогалерея</h2>
+               <div class="index-galery__content">
+                 <figure class="index-galery__photo">
+                   <img src="http://placehold.it/286x164"
+                        alt="barbershop galery" width="268" height="164">
                  </figure>
                  <button class="btn btn--gallery-prev">Назад</button>
                  <button class="btn btn--gallery-next">Вперёд</button>
@@ -142,7 +149,7 @@
     <footer class="main-footer">
       <div class="contatiner">
         <section class="footer-contacts">
-          <p>
+          <p class="footer-contacts__text">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
@@ -150,10 +157,10 @@
           </p>
         </section>
         <section class="footer-social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <p class="footer-social__text">Давайте дружить!</p>
+          <a class="footer-social__btn footer-social__btn--vk" href="#">Вконтакте</a>
+          <a class="footer-social__btn footer-social__btn--fb" href="#">Фейсбук</a>
+          <a class="footer-social__btn footer-social__btn--inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
