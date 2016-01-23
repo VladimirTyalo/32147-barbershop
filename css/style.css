@@ -29,12 +29,26 @@ body {
 
 
 /*        THEME          */
+.main-content {
+  width: 85%;
+  background: lightgreen;
+  margin: 0 auto;
+}
 
 .container {
   background: lightblue;
-  width: 700px;
+  width: 1000px;
   margin: 0 auto;
 }
+
+.main-footer {
+  background: lightblue;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+
 
 
 
