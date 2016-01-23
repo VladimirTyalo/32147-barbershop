@@ -15,7 +15,9 @@
 
 
 /*        BASE           */
-
+body {
+  background: black;
+}
 
 /*        LAYOUT         */
 
@@ -28,6 +30,11 @@
 
 /*        THEME          */
 
+.container {
+  background: lightblue;
+  width: 700px;
+  margin: 0 auto;
+}
 
 
 
