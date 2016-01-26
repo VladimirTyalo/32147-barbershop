@@ -1,23 +1,37 @@
-/* sequense of properties in individual class */
-
+/* sequense of properties */
 /* position */
-
 /* box model */
-
 /* typography */
-
 /*  styling */
-
 /* animation */
-
 /* other */
-
 
 
 /*        BASE           */
 body {
-  background: grey;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  font-color: #000000;
 }
+
+h1 {
+  /* no h1 teg in html */
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  font-color: #000000;
+}
+
+h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  font-color: #000000;
+}
+
+
+
 
 /*        LAYOUT         */
 
@@ -29,24 +43,6 @@ body {
 
 
 /*        THEME          */
-.main-content {
-  width: 85%;
-  background: lightgreen;
-  margin: 0 auto;
-}
-
-.container {
-  background: lightblue;
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.main-footer {
-  background: lightblue;
-  width: 1000px;
-  margin: 0 auto;
-}
-
 
 
 
