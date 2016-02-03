@@ -1,0 +1,45 @@
+.main-header {
+    background: $bgColorHeader;
+}
+
+.container {
+  @include size($mainWidth);
+  @include center();
+  @include clearfix();
+}
+
+.main-nav {
+    @include size($mainNavSize);
+    font-size: 0px;
+    float: left;
+
+    &__item {
+       @include inlineBlock(bottom);
+       padding: 25px 10px 25px 10px;
+    }
+
+    &__link {
+      @include font(16px, 10px, "PT Sans Narrow");
+      @include textDecor(bold, uppercase, none, $fntColorWhite);
+      display: block;
+    }
+}
+
+.user-block {
+  width: 170px;
+  font-size: 0px;
+  float: right;
+  padding: 25px 0px 25px 10px;
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__link {
+    @include font(16px, 10px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, $fntColorWhite);
+
+  }
+}
+
+
