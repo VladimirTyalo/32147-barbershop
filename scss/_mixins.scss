@@ -1,18 +1,21 @@
-@mixin clearfix(){
-  content: "";
+@mixin clearfix() {
   display: table;
   clear: both;
+
+  content: "";
 }
 
 @mixin inlineBlock($align: top) {
   display: inline-block;
+
   vertical-align: $align;
 }
 
 @mixin center() {
   display: block;
-  margin-left: auto;
+
   margin-right: auto;
+  margin-left: auto;
 }
 
 @mixin size($width, $height: auto) {
@@ -21,34 +24,37 @@
 }
 
 @mixin font($size, $line, $family: $fntSans) {
-    font-size: $size;
-    line-height: $line;
-    font-family: $family;
+  font-family: $family;
+  font-size: $size;
+  line-height: $line;
 }
 
 @mixin textDecor($weight, $trasnform, $decor, $color) {
   font-weight: $weight;
-  text-transform: $trasnform;
-  text-decoration: $decor;
+
   color: $color;
+
+  text-decoration: $decor;
+  text-transform: $trasnform;
 }
 
-
-
 @mixin indexContentBox {
-  margin-right: 80px;
-  margin-left: 80px;
   margin-top: 54px;
+  margin-right: 80px;
   margin-bottom: 54px;
+  margin-left: 80px;
 }
 
 @mixin indexButton {
   width: 140px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  background: $colorBlack;
+
+  text-align: center;
+
   @include inlineBlock(middle);
   @include font(14px, 18px, "PT Sans Narrow");
   @include textDecor(bold, uppercase, none, $fntColorWhite);
-  padding-top: 8px;
-  padding-bottom: 8px;
-  text-align: center;
-  background: $colorBlack;
 }

@@ -1,21 +1,25 @@
 // -- fonts
 @font-face {
-  font-family: 'PT Sans Narrow';
-  src:  url("./../fonts/web/ptsansnarrow.woff2") format('woff2'),
-        url("./../fonts/web/ptsansnarrow.woff") format('woff');
-}
+  font-family: "PT Sans Narrow";
 
+  src: url("./../fonts/web/ptsansnarrow.woff2") format("woff2"),
+  url("./../fonts/web/ptsansnarrow.woff") format("woff");
+}
 
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+
   font-family: Arial, sans-serif;
   font-size: 20px;
-  // background: url("./../img/indexBackground.jpg") no-repeat 50%;
+  background: url("./../img/indexBackground.jpg") no-repeat 50%;
 }
 
-ul, li, p,b, a {
-  padding: 0px;
-  margin: 0px;
+ul,
+li,
+p,
+b,
+a {
+  margin: 0;
+  padding: 0;
 }
-

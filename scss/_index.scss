@@ -1,87 +1,90 @@
 .index-logo {
-  @include size($logoWidth);
-  @include center();
   margin-top: 57px;
   margin-bottom: 20px;
+
+  @include size($logoWidth);
+  @include center();
 }
 
 .features {
-  font-size: 0px;
   margin-bottom: 80px;
 
+  font-size: 0;
   &__item {
-    @include inlineBlock(top);
-    @include size($featureWidth);
     margin-right: 15px;
 
-     &:last-child {padding-right: 0px;}
+    @include inlineBlock(top);
+    @include size($featureWidth);
+    &:last-child {
+      padding-right: 0;
+    }
   }
-
-
-
   &__name {
     display: block;
-    margin-bottom: 80px;
-    text-align: center;
-    @include center();
 
+    margin-bottom: 80px;
+
+    text-align: center;
+
+    @include center();
     @include font(30px, 20px, $fntSans);
     @include textDecor(normal, uppercase, none, $fntColorWhite);
   }
+  &__text {
+    text-align: center;
 
-  &__text{
     @include font(14px, 24px, $fntSans);
     @include textDecor(normal, uppercase, none, $fntColorWhite);
-    text-align: center;
   }
 }
 
-
 .index-content {
-  background: url($bgContentPath);
-  @include clearfix();
   margin-bottom: 35px;
 
+  background: url($bgContentPath);
+
+  @include clearfix();
   &__left {
-     width: $indexContentBox;
-     @include indexContentBox();
-     float: left;
+    float: left;
+
+    width: $indexContentBox;
+
+    @include indexContentBox();
   }
-
-
   &__right {
-     width: $indexContentBox;
-     @include indexContentBox();
-     float: left;
-  }
+    float: left;
 
+    width: $indexContentBox;
+
+    @include indexContentBox();
+  }
 }
 
 .news-preview {
-   width: $indexContentBox;
-   @include indexContentBox();
-   float: left;
+  float: left;
 
-   &__title {
-    margin-top: 0px;
+  width: $indexContentBox;
+
+  @include indexContentBox();
+  &__title {
+    margin-top: 0;
+
     @include font(30px, 30px, $fntSans);
     @include textDecor(bold, uppercase, none, $fntColorBlack);
-   }
+  }
+  &__item {
+    margin-bottom: 30px;
 
-   &__item {
-      list-style: none;
-      margin-bottom: 30px;
-   }
-
-   &__text {
+    list-style: none;
+  }
+  &__text {
     @include font(14px, 24px, $fntSans);
     @include textDecor(bold, uppercase, none, $fntColorBlack);
-   }
-
-   &__time {
+  }
+  &__time {
     @include font(14px, auto, $fntSans);
     @include textDecor(normal, none, none, $fntColorBlack);
-   }
+  }
 }
 
 .btn {
@@ -89,19 +92,18 @@
 }
 
 .index-galery {
-  width: $indexContentBox;
-   @include indexContentBox();
-   float: left;
+  float: left;
 
-    &__title {
-    margin-top: 0px;
+  width: $indexContentBox;
+
+  @include indexContentBox();
+  &__title {
+    margin-top: 0;
+
     @include font(30px, 30px, $fntSans);
     @include textDecor(bold, uppercase, none, $fntColorBlack);
-   }
-
-   &__photo {
+  }
+  &__photo {
     margin-bottom: 44px;
-   }
+  }
 }
-
-

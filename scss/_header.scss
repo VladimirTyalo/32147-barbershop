@@ -1,59 +1,59 @@
 .main-header {
-    background: $bgColorHeader;
+  background: $bgColorHeader;
 }
 
 .container {
   @include size($mainWidth);
   @include center();
   @include clearfix();
-
-  background: rgba(200,200,200, 0.4);
 }
 
 .main-nav {
-    @include size($mainNavSize);
-    font-size: 0px;
-    float: left;
-    margin-left: 10px;
+  float: left;
 
-    &__item {
-       @include inlineBlock(middle);
-       width: 100px;
-       padding: 25px 5px 25px 5px;
+  margin-left: 10px;
 
-      &:first-child {
-        padding-left: 0px;
-      }
+  font-size: 0;
+
+  @include size($mainNavSize);
+  &__item {
+    width: 100px;
+    padding: 25px 5px 25px 5px;
+
+    @include inlineBlock(middle);
+    &:first-child {
+      padding-left: 0;
     }
+  }
+  &__link {
+    display: block;
 
-    &__link {
-      @include font(16px, 20px, "PT Sans Narrow");
-      @include textDecor(bold, uppercase, none, $fntColorWhite);
-      display: block;
-      text-align: center;
-    }
+    text-align: center;
+
+    @include font(16px, 20px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, $fntColorWhite);
+  }
 }
 
 .user-block {
-  width: 220px;
-  font-size: 0px;
   float: right;
+
+  width: 220px;
   padding-top: 25px;
-  padding-bottom: 25px;
   padding-right: 20px;
+  padding-bottom: 25px;
+
+  font-size: 0;
+
   text-align: right;
-
-
   &__icon {
     margin-right: 10px;
+
     @include inlineBlock(middle);
   }
-
   &__link {
     @include inlineBlock(middle);
     @include font(16px, 20px, "PT Sans Narrow");
     @include textDecor(bold, uppercase, none, $fntColorWhite);
   }
 }
-
-

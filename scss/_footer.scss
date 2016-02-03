@@ -1,68 +1,66 @@
 
 .main-footer {
-  backround: $bgColorFooter;
-
   padding-top: 60px;
   padding-bottom: 40px;
 
+  backround: $bgColorFooter;
 }
 
 .footer-contacts {
   float: left;
-  margin-top: 62px;
 
+  margin-top: 62px;
   &__text {
     @include size(320px);
     @include font(14px, 24px, $fntSans);
     @include textDecor(bold, uppercase, none, $fntColorWhite);
-
     a {
-      @include textDecor(bold, uppercase, none, $fntColorWhite);
       display: block;
+
+      @include textDecor(bold, uppercase, none, $fntColorWhite);
     }
   }
 }
 
 .footer-social {
-  @include size(140px);
   float: left;
-  font-size: 0px;
-  margin-top: 62px;
-  margin-left: 70px;
-  margin-right: 250px;
 
+  margin-top: 62px;
+  margin-right: 250px;
+  margin-left: 70px;
+
+  font-size: 0;
+
+  @include size(140px);
   &__text {
     @include font(14px, 24px, $fntSans);
     @include textDecor(bold, uppercase, none, $fntColorWhite);
   }
-
   &__btn {
-
     @include size(40px);
-
   }
-
   &__btn--vk {
     // icon
   }
-
   &__btn--fb {
-   // icon
+    // icon
   }
-
   &__btn--ins {
-   // icon
+    // icon
   }
 }
 
 .footer-copyright {
-  @include size(140px);
   float: right;
+
   margin-top: 62px;
-    b,a {
-      @include font(14px, 24px, $fntSans);
-      @include textDecor(bold, uppercase, none, $fntColorWhite);
-      dislplay: block;
-      float: left;
-    }
+
+  @include size(140px);
+  b,a {
+    float: left;
+
+    @include font(14px, 24px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorWhite);
+    dislplay: block;
+  }
 }
