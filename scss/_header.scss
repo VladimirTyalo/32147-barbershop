@@ -6,39 +6,53 @@
   @include size($mainWidth);
   @include center();
   @include clearfix();
+
+  background: rgba(200,200,200, 0.4);
 }
 
 .main-nav {
     @include size($mainNavSize);
     font-size: 0px;
     float: left;
+    margin-left: 10px;
 
     &__item {
-       @include inlineBlock(bottom);
-       padding: 25px 10px 25px 10px;
+       @include inlineBlock(middle);
+       width: 100px;
+       padding: 25px 5px 25px 5px;
+
+      &:first-child {
+        padding-left: 0px;
+      }
     }
 
     &__link {
-      @include font(16px, 10px, "PT Sans Narrow");
+      @include font(16px, 20px, "PT Sans Narrow");
       @include textDecor(bold, uppercase, none, $fntColorWhite);
       display: block;
+      text-align: center;
     }
 }
 
 .user-block {
-  width: 170px;
+  width: 220px;
   font-size: 0px;
   float: right;
-  padding: 25px 0px 25px 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  text-align: right;
+
 
   &__icon {
     margin-right: 10px;
+    @include inlineBlock(middle);
   }
 
   &__link {
-    @include font(16px, 10px, "PT Sans Narrow");
+    @include inlineBlock(middle);
+    @include font(16px, 20px, "PT Sans Narrow");
     @include textDecor(bold, uppercase, none, $fntColorWhite);
-
   }
 }
 

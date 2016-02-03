@@ -1,6 +1,3 @@
-// @import "_variables.scss";
-// @import "_mixins.scss";
-
 .index-logo {
   @include size($logoWidth);
   @include center();
@@ -64,12 +61,47 @@
    width: $indexContentBox;
    @include indexContentBox();
    float: left;
+
+   &__title {
+    margin-top: 0px;
+    @include font(30px, 30px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+   }
+
+   &__item {
+      list-style: none;
+      margin-bottom: 30px;
+   }
+
+   &__text {
+    @include font(14px, 24px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+   }
+
+   &__time {
+    @include font(14px, auto, $fntSans);
+    @include textDecor(normal, none, none, $fntColorBlack);
+   }
+}
+
+.btn {
+  @include indexButton();
 }
 
 .index-galery {
   width: $indexContentBox;
    @include indexContentBox();
    float: left;
+
+    &__title {
+    margin-top: 0px;
+    @include font(30px, 30px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+   }
+
+   &__photo {
+    margin-bottom: 44px;
+   }
 }
 
 

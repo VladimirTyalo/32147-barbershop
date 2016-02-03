@@ -1,8 +1,8 @@
 // -- fonts
 @font-face {
   font-family: 'PT Sans Narrow';
-  src:  url("fonts/web/ptsansnarrow.woff2") format('woff2'),
-        url("fonts/web/ptsansnarrow.woff") format('woff');
+  src:  url("./../fonts/web/ptsansnarrow.woff2") format('woff2'),
+        url("./../fonts/web/ptsansnarrow.woff") format('woff');
 }
 
 
@@ -11,10 +11,10 @@ body {
   padding: 0px;
   font-family: Arial, sans-serif;
   font-size: 20px;
-  background: url("./../img/indexBackground.jpg");
+  // background: url("./../img/indexBackground.jpg") no-repeat 50%;
 }
 
-p,b, a {
+ul, li, p,b, a {
   padding: 0px;
   margin: 0px;
 }
