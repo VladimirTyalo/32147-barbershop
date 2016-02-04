@@ -1,0 +1,153 @@
+.page-main-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: 130px;
+
+  @include font(30px, 30px, $fntSans);
+  @include textDecor(bold, uppercase, none, $fntColorBlack);
+}
+
+.breadcrumb {
+  margin-bottom: 55px;
+  margin-left: 130px;
+
+  font-size: 0;
+  &__item {
+    margin-right: 20px;
+
+    @include inlineBlock(middle);
+    a,
+    span {
+      @include font(14px, 18px, $fntSans);
+      @include textDecor(bold, uppercase, none, $fntColorBlack);
+    }
+    span {
+      color: $fntColorBreadcrumbLast;
+    }
+  }
+}
+
+.filters {
+  float: left;
+
+  width: 220px;
+  margin-right: 20px;
+  &__title {
+    @include font(24px, 24px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+  }
+}
+
+.brands {
+  list-style: none;
+  &__name {
+    display: block;
+
+    margin-bottom: 20px;
+    input {
+      display: none;
+    }
+    label {
+      @include font(14px, 24px, $fntSans);
+      @include textDecor(bold, uppercase, none, $fntColorBlack);
+    }
+  }
+}
+
+.porduct-wrapper {
+  float: left;
+
+  width: 700px;
+  padding-bottom: 40px;
+
+  font-size: 0;
+}
+
+.product-post {
+  width: 220px;
+
+  @include inlineBlock(top);
+  &__link {
+    width: 220px;
+    height: 165px;
+  }
+  &__text {
+    display: block;
+
+    width: 170px;
+
+    @include font(14px, 18px, $fntSans);
+    @include textDecor(bold, none, none, $fntColorBlack);
+  }
+}
+
+.price-teg {
+  width: 188px;
+  margin-bottom: 16px;
+
+  font-size: 0;
+  span {
+    color: $fntColorBlack;
+
+    background: $bgColorPriceTag;
+
+    @include indexButton();
+  }
+}
+
+
+.item-types {
+  list-syle: none;
+  &__name {
+    display: block;
+
+    margin-bottom: 20px;
+    input {
+      display: none;
+    }
+    label {
+      @include font(14px, 24px, $fntSans);
+      @include textDecor(bold, uppercase, none, $fntColorBlack);
+    }
+  }
+}
+
+.pagination {
+  float: left;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  font-size: 0;
+
+  &__item {
+    width: 50px;
+    margin-right: 8px;
+
+    text-align: center;
+
+    @include inlineBlock(top);
+    a {
+      display: block;
+
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      background: $colorBlack;
+
+      @include font(14px, 18px, $fntSans);
+      @include textDecor(bold, uppercase, none, $fntColorWhite);
+    }
+    span {
+      display: block;
+
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      background: $colorWhite;
+
+      @include font(14px, 18px, $fntSans);
+      @include textDecor(bold, uppercase, none, $fntColorBlack);
+    }
+  }
+}

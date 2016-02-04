@@ -1,8 +1,7 @@
 @mixin clearfix() {
+  content: "";
   display: table;
   clear: both;
-
-  content: "";
 }
 
 @mixin inlineBlock($align: top) {
@@ -31,7 +30,6 @@
 
 @mixin textDecor($weight, $trasnform, $decor, $color) {
   font-weight: $weight;
-
   color: $color;
 
   text-decoration: $decor;
@@ -40,15 +38,16 @@
 
 @mixin indexContentBox {
   margin-top: 54px;
-  margin-right: 80px;
+  margin-right: 0;
   margin-bottom: 54px;
-  margin-left: 80px;
+  margin-left: 75px;
 }
 
 @mixin indexButton {
-  width: 140px;
   padding-top: 8px;
+  padding-right: 20px;
   padding-bottom: 8px;
+  padding-left: 20px;
 
   background: $colorBlack;
 

@@ -6,6 +6,19 @@
   @include size($mainWidth);
   @include center();
   @include clearfix();
+  &--catalog {
+    width: 1200px;
+    padding-top: 55px;
+
+    background: #f8f5f2 url($bgContentPath);
+  }
+
+  &--price-list {
+    width: 1200px;
+    padding-top: 55px;
+
+    background: #f8f5f2 url($bgContentPath);
+  }
 }
 
 .main-nav {

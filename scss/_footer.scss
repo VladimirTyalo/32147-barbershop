@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 40px;
 
-  backround: $bgColorFooter;
+  background: $bgColorFooter;
 }
 
 .footer-contacts {
@@ -56,7 +56,8 @@
   margin-top: 62px;
 
   @include size(140px);
-  b,a {
+  b,
+  a {
     float: left;
 
     @include font(14px, 24px, $fntSans);

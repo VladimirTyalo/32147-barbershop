@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Барбершоп | каталог товаров</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
   </head>
   <body class="catalog">
 
@@ -13,67 +14,66 @@
       <div class="container">
         <nav class="main-nav">
           <ul>
-            <li class="list__item">
-              <a class="item__link" href="#" >Информация</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" >Информация</a>
             </li>
-            <li class="list__item">
-              <a class="item__link" href="#" >Новости</a>
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="#">Новости</a>
             </li>
-            <li class="list__item">
-              <a class="item__link" href="price-list.html">Прайс-лист</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="price-list.html">Прайс-лист</a>
             </li>
-            <li class="list__item">
-              <span class="item__link">Магазин</span>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="cosmetic-catalog.html">
+                Магазин
+              </a>
             </li>
-            <li class="list__item">
-              <a class="item__link" href="#" >Контакты</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" >Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <div class="user-block">
-          <img class="user-block__icon" src="img/login-icon.png" width="18" height="16" alt="login-icon">
+        <div class="user-block" >
+          <img class="user-block__icon" src="img/login-icon.png" width="18" height="16" alt="login icon">
           <a class="user-block__link" href="#" >Вход</a>
         </div>
       </div>
     </header>
 
-
-
     <main class="main-content">
-      <div class="container">         <!--         -->
+      <div class="container container--catalog">         <!--         -->
         <h1 class="page-main-title">Средства для ухода</h1>
         <ul class="breadcrumb">
           <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
           <li class="breadcrumb__item"><a href="#">Магазин</a></li>
           <li class="breadcrumb__item"><span>Средства для ухода</span></li>
         </ul>
-
         <div class="container">
           <form class="filters" action="#" method="post">
               <h2 class="filters__title">Производители</h2>
               <ul class="brands">
-                <li class="brands-name">
+                <li class="brands__name">
                   <input type="checkbox" id="buxter" name="buxter">
                   <label for="buxter">Buxter of California</label>
                 </li>
-                <li class="brands-name">
+                <li class="brands__name">
                   <input type="checkbox" id="natty" name="brand-natty">
                   <label for="natty">Mr Natty</label>
                 </li>
-                <li class="brands-name">
+                <li class="brands__name">
                   <input type="checkbox" id="suav" name="brand-suav">
                   <label for="suav">Suavecito</label>
                 </li>
-                <li class="brands-name">
+                <li class="brands__name">
                   <input type="checkbox" id="malin+goetz" name="brand-malin-goetz">
                   <label for="malin+goetz">Malin + Goetz</label>
                 </li>
-                <li class="brands-name">
+                <li class="brands__name">
                   <input type="checkbox" id="murray" name="brand-murray">
                   <label for="murray">Murray's</label>
                 </li>
-                <li class="brands-name">
+                <li class="brands__name">
                   <input type="checkbox" id="crew" name="brand-crew">
                   <label for="crew">American crew</label>
                 </li>
@@ -95,8 +95,7 @@
                 </li>
               </ul>
 
-              <button type="submit">Показать</button>
-
+              <button class="btn" type="submit">Показать</button>
           </form>
 
 
@@ -112,7 +111,7 @@
               </a>
               <div class="price-teg">
                 <span>2900 руб.</span>
-                <a href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </article>
 
@@ -125,7 +124,7 @@
               </div>
               <div class="price-teg">
                 <span>750 руб.</span>
-                <a href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </article>
 
@@ -138,7 +137,7 @@
               </div>
               <div class="price-teg">
                 <span>290 руб.</span>
-                <a href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </article>
 
@@ -151,7 +150,7 @@
               </div>
               <div class="price-teg">
                 <span>500 руб.</span>
-                <a href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </article>
 
@@ -164,7 +163,7 @@
               </div>
               <div class="price-teg">
                 <span>300 руб.</span>
-                <a href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </article>
 
@@ -177,16 +176,16 @@
               </div>
               <div class="price-teg">
                 <span>3500 руб.</span>
-                <a href="#">Купить</a>
+                <a class="btn" href="#">Купить</a>
               </div>
             </article>
           </div>
 
           <ul class="pagination">
-            <li><a href="#">1</a></li>
-            <li><span class="active">2</span></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
+            <li class="pagination__item"><a href="#">1</a></li>
+            <li class="pagination__item"><span class="active">2</span></li>
+            <li class="pagination__item"><a href="#">3</a></li>
+            <li class="pagination__item"><a href="#">4</a></li>
           </ul>
 
         </div>
@@ -195,7 +194,7 @@
 
 
     <footer class="main-footer">
-      <div class="contatiner">
+      <div class="container">
         <section class="footer-contacts">
           <p class="footer-contacts__text">
           Барбершоп «Бородинский»<br>
@@ -205,13 +204,13 @@
           </p>
         </section>
         <section class="footer-social">
-          <p class="footer-social__text">Давайте дружить!</p>
+          <b class="footer-social__text">Давайте дружить!</b>
           <a class="footer-social__btn footer-social__btn--vk" href="#">Вконтакте</a>
           <a class="footer-social__btn footer-social__btn--fb" href="#">Фейсбук</a>
           <a class="footer-social__btn footer-social__btn--inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-copyright">
-          <p>Разработано:</p>
+          <b>Разработано:</b>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
