@@ -1,0 +1,98 @@
+
+
+.catch-phrase {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  @include font(48px, auto, $fntSans);
+  @include textDecor(normal, uppercase, none, $fntColorBlack);
+}
+
+.price-page-content {
+  float: left;
+  margin-top: 0;
+  &--left {
+    width: 260px;
+    margin-right: 220px;
+  }
+  &__title {
+width: 240px;
+
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-right: 0;
+
+    @include font(24px, 30px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+    &--right {
+      width: 190px;
+      padding-right: 0;
+    }
+  }
+  &--right {
+    float: right;
+    width: 460px;
+  }
+}
+
+.price-list {
+  float: left;
+  margin-top: 40px;
+
+  list-style: none;
+  &__item  a {
+    text-decoration: none;
+
+    @include font(14px, 18px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+  }
+}
+
+.price-table {
+  display: table;
+  margin-right: 0;
+  padding-right: 0;
+
+  border-collapse: collapse;
+  &__row {
+    display: table-row;
+  }
+  &__cell {
+    display: table-cell;
+    width: 210px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    border: 2px solid black;
+    @include font(14px, 18px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+    &:nth-of-type(2n) {
+      border-left: none;
+    }
+  }
+}
+
+.about-us {
+  float: left;
+
+  @include clearfix();
+  &__title {
+    @include font(24px, 30px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+  }
+  &__text {
+    float: left;
+    width: 387px;
+    margin-right: 100px;
+    margin-bottom: 54px;
+
+    @include font(14px, 24px, $fntSans);
+    @include textDecor(bold, uppercase, none, $fntColorBlack);;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

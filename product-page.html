@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Барбершоп | "Baxter of California"</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body class="product-page">
@@ -12,20 +13,20 @@
       <div class="container">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="list__item">
-              <a class="item__link" href="#">Информация</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Информация</a>
             </li>
-            <li class="list__item">
-              <a class="item__link" href="#">Новости</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Новости</a>
             </li>
-            <li class="list__item">
-              <a class="item__link" href="price-list.html">Прайс-лист</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="price-list.html">Прайс-лист</a>
             </li>
-            <li class="list__item">
-              <a class="item__link" href="cosmetic-catalog.html">Магазин</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="cosmetic-catalog.html">Магазин</a>
             </li>
-            <li class="list__item">
-              <a class="item__link" href="#">Контакты</a>
+            <li class="main-nav__item">
+              <a class="imain-nav__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -46,7 +47,7 @@
         </h1>
         <ul class="breadcrumb">
           <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumb__item"><a href="#">Магазин</a></li>
+          <li class="breadcrumb__item"><a href="cosmetic-catalog.html">Магазин</a></li>
           <li class="breadcrumb__item"><a href="#">Средства для ухода</a></li>
           <li class="breadcrumb__item">
             <span>Набор для путешествий "Baxter of California"</span>
@@ -54,18 +55,18 @@
         </ul>
 
         <section class="item-galery">
-          <img src="img/cosmetic-big.jpg" alt="creams with bag" width="486" height="524">
+          <img class="item-galery__big-image" src="img/cosmetic-big.jpg" alt="creams with bag" width="460" height="498">
           <div class="item-galery__small">
-            <img src="img/cosmetic-small-1.jpg" alt="side view of product" width="166" height="175">
-            <img src="img/cosmetic-small-2.jpg" alt="side view of product" width="166" height="175">
-            <img src="img/cosmetic-small-3.jpg" alt="side view of product" width="166" height="175">
+            <img class="item-galery__small-image" src="img/cosmetic-small-1.jpg" alt="side view of product" width="140" height="149">
+            <img class="item-galery__small-image" src="img/cosmetic-small-2.jpg" alt="side view of product" width="140" height="149">
+            <img class="item-galery__small-image" src="img/cosmetic-small-3.jpg" alt="side view of product" width="140" height="149">
           </div>
         </section>
 
-        <section class="item-description">
-          <div class="item-description__info">
-            <div class="item__avilability">есть в наличии</div>
-            <div class="item_code">Артикул: Dexter-AЕ</div>
+        <section class="description">
+          <div class="description__info">
+            <div class="description__avilability">есть в наличии</div>
+            <div class="description__code">Артикул: Dexter-AЕ</div>
             <p>
               Travel kit - необходимый аксесуар во время любого путешествия.
               В аккуратной кожаной сумке находится все, что нужно для бритья
@@ -80,8 +81,8 @@
           </div>
 
           <div class="description__package-bandle">
-            <h2 class="package-bandle__title">В набор входят:</h2>
-            <ul class="package__items">
+            <h2 class="description__title">В набор входят:</h2>
+            <ul class="items">
               <li class="items__item-name">Средство для умывантя (50 мл)</li>
               <li class="items__item-name">Увлажняющий крем (50 мл)</li>
               <li class="items__item-name">Крем для бритья (50 мл)</li>
@@ -96,7 +97,7 @@
 
 
     <footer class="main-footer">
-      <div class="contatiner">
+      <div class="container">
         <section class="footer-contacts">
           <p class="footer-contacts__text">
           Барбершоп «Бородинский»<br>
@@ -106,13 +107,13 @@
           </p>
         </section>
         <section class="footer-social">
-          <p class="footer-social__text">Давайте дружить!</p>
+          <b class="footer-social__text">Давайте дружить!</b>
           <a class="footer-social__btn footer-social__btn--vk" href="#">Вконтакте</a>
           <a class="footer-social__btn footer-social__btn--fb" href="#">Фейсбук</a>
           <a class="footer-social__btn footer-social__btn--inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-copyright">
-          <p>Разработано:</p>
+          <b>Разработано:</b>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>

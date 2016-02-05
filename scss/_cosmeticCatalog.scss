@@ -29,8 +29,7 @@
 
 .filters {
   float: left;
-
-  width: 220px;
+  width: 200px;
   margin-right: 20px;
   &__title {
     @include font(24px, 24px, $fntSans);
@@ -42,7 +41,6 @@
   list-style: none;
   &__name {
     display: block;
-
     margin-bottom: 20px;
     input {
       display: none;
@@ -54,10 +52,9 @@
   }
 }
 
-.porduct-wrapper {
+.products-wrapper {
   float: left;
-
-  width: 700px;
+  width: 720px;
   padding-bottom: 40px;
 
   font-size: 0;
@@ -65,33 +62,63 @@
 
 .product-post {
   width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+  background: #ffffff;
+
+  text-align: center;
 
   @include inlineBlock(top);
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
   &__link {
     width: 220px;
     height: 165px;
   }
   &__text {
-    display: block;
-
     width: 170px;
 
+    @include inlineBlock(top);
     @include font(14px, 18px, $fntSans);
     @include textDecor(bold, none, none, $fntColorBlack);
+    span {
+      display: block;
+    }
   }
 }
 
 .price-teg {
   width: 188px;
-  margin-bottom: 16px;
+  margin-top: 16px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 
-  font-size: 0;
+  @include clearfix();
   span {
-    color: $fntColorBlack;
+    float: left;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-    background: $bgColorPriceTag;
+    background: #e5e5e5;
 
-    @include indexButton();
+    @include font(14px, 16px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, #000000);
+  }
+  a {
+    float: left;
+    width: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background: #000000;
+
+    @include font(14px, 16px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, #ffffff);
   }
 }
 
@@ -100,7 +127,6 @@
   list-syle: none;
   &__name {
     display: block;
-
     margin-bottom: 20px;
     input {
       display: none;
@@ -114,12 +140,10 @@
 
 .pagination {
   float: left;
-
   margin-top: 40px;
   margin-bottom: 40px;
 
   font-size: 0;
-
   &__item {
     width: 50px;
     margin-right: 8px;
@@ -129,7 +153,6 @@
     @include inlineBlock(top);
     a {
       display: block;
-
       padding-top: 15px;
       padding-bottom: 15px;
 
@@ -140,7 +163,6 @@
     }
     span {
       display: block;
-
       padding-top: 15px;
       padding-bottom: 15px;
 

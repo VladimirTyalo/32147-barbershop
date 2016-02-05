@@ -1,0 +1,86 @@
+.main-content {
+  width: 1200px;
+  padding-top: 55px;
+
+  background: #f8f5f2 url($bgContentPath);
+
+  @include center();
+}
+
+.page-main-title {
+  margin-left: 0;
+}
+
+.breadcrumb {
+  margin-left: 0;
+
+  font-size: 0;
+  &__item {
+    @include inlineBlock(middle);
+    @include font(14px, 18px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, $fntColorWhite);
+  }
+}
+
+.item-galery {
+  float: left;
+  width: 480px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  &__big-image {
+    width: 460px;
+  }
+  &__small-image {
+    float: left;
+    width: 140px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;;
+    }
+  }
+}
+
+.description {
+  float: left;
+  width: 390px;
+  margin-left: 60px;
+  &__info {
+    width: 380px;
+  }
+  &__avilability {
+    float: left;
+    margin-bottom: 40px;
+
+    @include font(14px, 16px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+  }
+  &__code {
+    float: right;
+    margin-bottom: 40px;
+
+    @include font(14px, 16px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, #aeaeae);
+  }
+  p {
+    float: left;
+    margin-bottom: 40px;
+
+    @include font(14px, 24px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, $fntColorBlack);
+  }
+  &__title {
+    @include font(24px, 30px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, #000000);
+  }
+}
+
+.items {
+  list-style: none;
+  &__item-name {
+    @include font(14px, 24px, "PT Sans Narrow");
+    @include textDecor(bold, uppercase, none, #000000);
+  }
+}
+
+
+

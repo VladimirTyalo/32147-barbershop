@@ -10,6 +10,8 @@
   margin-bottom: 80px;
 
   font-size: 0;
+
+  text-align: center;
   &__item {
     margin-right: 15px;
 
@@ -21,7 +23,6 @@
   }
   &__name {
     display: block;
-
     margin-bottom: 80px;
 
     text-align: center;
@@ -47,7 +48,6 @@
   @include clearfix();
   &__left {
     float: left;
-
     width: 380px;
 
     font-size: 0;
@@ -56,7 +56,6 @@
   }
   &__right {
     float: left;
-
     width: $indexContentBox;
 
     @include indexContentBox();
@@ -84,8 +83,7 @@
 
 .news-preview {
   float: left;
-
-  width: $indexContentBox;
+  width: 300px;
 
   @include indexContentBox();
   &__title {
@@ -96,6 +94,7 @@
   }
   &__item {
     margin-bottom: 30px;
+
     list-style: none;
   }
   &__text {
@@ -109,18 +108,24 @@
 }
 
 .btn {
+  @include inlineBlock();
   @include indexButton();
   &--input {
     width: 290px;
 
     border: none;
+    &--galery-prev {
+      width: 130px;
+      padding-right: 20px;
+      padding-left: 50px;
+    }
   }
 }
 
 .index-galery {
   float: left;
-
   width: $indexContentBox;
+  padding-left: 100px;
 
   @include indexContentBox();
   &__title {
@@ -130,6 +135,8 @@
     @include textDecor(bold, uppercase, none, $fntColorBlack);
   }
   &__photo {
+    overflow: hidden;
+    width: 300px;
     margin-bottom: 44px;
   }
 }
@@ -139,7 +146,6 @@
   @include clearfix();
   input {
     float: left;
-
     width: 115px;
     margin-right: 20px;
     margin-bottom: 20px;
